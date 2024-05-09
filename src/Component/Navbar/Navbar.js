@@ -1,19 +1,27 @@
-import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom';
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import { IoClose, IoMenu } from "react-icons/io5";
-import "./Navbar.css"
+import "./Navbar.css";
 import LogoImage from "../../Assets/Logo/Logo.png";
 
 function Navbar() {
-    const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
   return (
     <header className="header">
       <nav className="nav container">
         <NavLink to="/" className="nav_logo">
-          <img src={LogoImage} alt='Logo' />
+          <img src={LogoImage} alt="Logo" />
         </NavLink>
 
-        <div className="nav_menu">
+        <div className="nav_toggle" onClick={toggleMenu}>
+          {menuOpen ? <IoClose /> : <IoMenu />}
+        </div>
+
+        <div className={`nav_menu ${menuOpen ? "open" : ""}`}>
           <ul className="nav_list">
             <li className="nav_item">
               <NavLink to="/" className="nav_link">
@@ -46,16 +54,10 @@ function Navbar() {
               </NavLink>
             </li>
           </ul>
-          
-        </div><div className='nav_close' id='nav_close'>
-            <IoClose />
-          </div>
-        <div className='nav_toggle' id='nav_toggle'>
-          <IoMenu />
         </div>
       </nav>
     </header>
   );
 }
 
-export default Navbar
+export default Navbar;
