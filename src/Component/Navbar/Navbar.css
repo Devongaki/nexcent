@@ -1,0 +1,53 @@
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--White);
+    z-index: 100;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 3.5rem;
+    margin: 1rem;
+}
+
+.nav_list {
+    display: flex;
+    
+   
+}
+
+.nav_link{
+    color: var(--D_Gray);
+    font-size: 12px;
+    line-height: 16px
+    ;margin: 16px;
+}
+
+.nav_cta{
+    background-color: var(--Primary-color);
+    color: var(--White);
+    padding: 16px 32px;
+    margin: 5px;
+    cursor: pointer;
+
+}
+
+@media screen and (max-width: 1150px) {
+    .nav_mennu{
+        position: fixed;
+        top: o;
+        right: -100%;
+        background-color: hsla(0, 0%, 6%, 0.2);
+        backdrop-filter: blur(16px);
+        width: 80%;
+        height: 100%;
+        padding: 6rem 3rem 0;
+        transition: right 0.4s;
+    }
+}
