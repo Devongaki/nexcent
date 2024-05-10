@@ -1,10 +1,16 @@
-import React from 'react'
+import React from 'react';
+import "./Home.css"
+import Hero from '../../HeroSection/Hero';
+import Client from '../../ClientSection/Client';
+import Community from '../../Community/Community';
 
 function Home() {
   return (
-    <div className='home-section container'>
-      
-    </div>
+    <main className='main_section container'>
+      < Hero />
+      < Client />
+      < Community />
+    </main>
   )
 }
 
