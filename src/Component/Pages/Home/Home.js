@@ -6,7 +6,7 @@ import Community from '../../Community/Community';
 
 function Home() {
   return (
-    <main className='main_section container'>
+    <main className='main_section'>
       < Hero />
       < Client />
       < Community />
