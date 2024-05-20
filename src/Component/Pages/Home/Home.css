@@ -1,0 +1,5 @@
+.main_section{
+    display: flex;
+    flex-direction: column;
+    gap: 27.84px;
+}

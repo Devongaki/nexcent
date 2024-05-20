@@ -1,0 +1,26 @@
+.client_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 66.82px;
+    padding-bottom: 66.82px;
+    gap: 11px;
+}
+
+.client_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.client_text h4{
+    font-size: 25px;
+
+}
+
+.client_text p{
+    font-size: 14px;
+    color: var(--Gray);
+}
