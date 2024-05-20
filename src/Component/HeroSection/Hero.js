@@ -7,9 +7,12 @@ function Hero() {
   return (
     <div className="hero_section container">
       <div className="hero_container">
-        <div hero_text>
+        <div className="hero_text">
           <div className="hero_title">
-            <h1>Lessons and insights from 8 years</h1>
+            <h1>
+              Lessons and insights <br />
+              <span>from 8 years</span>
+            </h1>
           </div>
           <div className="hero_sub-title">
             <p>
