@@ -5,8 +5,8 @@ import HerImage from "../../Assets/Images/Illustration.png"
 
 function Hero() {
   return (
-    <div className="hero_section">
-      <div className="hero_container container">
+    <div className="hero_section container">
+      <div className="hero_container">
         <div hero_text>
           <div className="hero_title">
             <h1>Lessons and insights from 8 years</h1>
@@ -22,7 +22,7 @@ function Hero() {
           </div>
         </div>
         <div hero_image>
-          <img src={HerImage} alt='Hero image' />
+          <img src={HerImage} alt="Hero image" />
         </div>
       </div>
     </div>
