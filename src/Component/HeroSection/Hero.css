@@ -1,14 +1,17 @@
 .hero_section {
-  width: 100vw;
-  height: 90vh;
+  display: flex;
+  align-items: center;
+  padding-top: 66.82px;
+  padding-bottom: 66.82px;
   background-color: var(--Silver);
 }
 
 .hero_container {
-  height: 80vh;
+  width: 100%;
+  height: fit-content;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .hero_text {
@@ -34,4 +37,11 @@
 
 .hero_cta a {
   color: var(--White);
+}
+
+
+@media screen and (max-width: 945px) {
+  .hero_container {
+    flex-direction: column;
+  }
 }
