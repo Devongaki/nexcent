@@ -5,7 +5,7 @@
     justify-content: center;
     padding-top: 66.82px;
     padding-bottom: 66.82px;
-    gap: 11px;
+    gap: 35px;
 }
 
 .client_text{
@@ -21,6 +21,22 @@
 }
 
 .client_text p{
-    font-size: 14px;
+    font-size: 16px;
     color: var(--Gray);
+}
+
+.client_icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.client_icons-item img{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
 }

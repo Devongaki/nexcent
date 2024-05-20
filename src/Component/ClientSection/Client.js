@@ -16,13 +16,27 @@ function Client() {
         <p>We have been working with some Fortune 500+ clients</p>
       </div>
       <div className="client_icons">
-        <img src={clientLogo1} alt="clientLogo" />
-        <img src={clientLogo2} alt="clientLogo" />
-        <img src={clientLogo3} alt="clientLogo" />
-        <img src={clientLogo4} alt="clientLogo" />
-        <img src={clientLogo5} alt="clientLogo" />
-        <img src={clientLogo6} alt="clientLogo" />
-        <img src={clientLogo7} alt="clientLogo" />
+        <div className="client_icons-item">
+          <img src={clientLogo1} alt="clientLogo" />
+        </div>
+        <div className="client_icons-item">
+          <img src={clientLogo2} alt="clientLogo" />
+        </div>
+        <div className="client_icons-item">
+          <img src={clientLogo3} alt="clientLogo" />
+        </div>
+        <div className="client_icons-item">
+          <img src={clientLogo4} alt="clientLogo" />
+        </div>
+        <div className="client_icons-item">
+          <img src={clientLogo5} alt="clientLogo" />
+        </div>
+        <div className="client_icons-item">
+          <img src={clientLogo6} alt="clientLogo" />
+        </div>
+        <div className="client_icons-item">
+          <img src={clientLogo7} alt="clientLogo" />
+        </div>
       </div>
     </div>
   );
