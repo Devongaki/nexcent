@@ -1,4 +1,5 @@
 .hero_section {
+  height: 70vh;
   display: flex;
   align-items: center;
   padding-top: 66.82px;
@@ -39,8 +40,10 @@
   color: var(--White);
 }
 
-
 @media screen and (max-width: 945px) {
+    .hero_section{
+        height: auto;
+    }
   .hero_container {
     flex-direction: column;
   }
