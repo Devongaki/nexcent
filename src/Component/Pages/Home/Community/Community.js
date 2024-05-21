@@ -1,8 +1,8 @@
 import React from "react";
 import "./Community.css";
-import communityIcon1 from "../../Assets/Icons/Icon (1).png";
-import communityIcon2 from "../../Assets/Icons/Icon (2).png";
-import communityIcon3 from "../../Assets/Icons/Icon (3).png";
+import communityIcon1 from "../../../../Assets/Icons/Icon (1).png";
+import communityIcon2 from "../../../../Assets/Icons/Icon (2).png";
+import communityIcon3 from "../../../../Assets/Icons/Icon (3).png";
 
 function Community() {
   return (
@@ -34,9 +34,7 @@ function Community() {
               <img src={communityIcon2} />
             </div>
             <div className="community_card-text">
-              <h3 className="community_card-heading">
-                Membership Organisations
-              </h3>
+              <h3 className="community_card-heading">National Associations</h3>
               <p className="community_card-subheading">
                 Our membership management software provides full automation of
                 membership renewals and payments
@@ -48,9 +46,7 @@ function Community() {
               <img src={communityIcon3} />
             </div>
             <div className="community_card-text">
-              <h3 className="community_card-heading">
-                Membership Organisations
-              </h3>
+              <h3 className="community_card-heading">Clubs And Groups</h3>
               <p className="community_card-subheading">
                 Our membership management software provides full automation of
                 membership renewals and payments

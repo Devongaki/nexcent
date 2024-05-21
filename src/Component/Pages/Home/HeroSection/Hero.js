@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Hero.css"
 import { NavLink } from 'react-router-dom';
-import HerImage from "../../Assets/Images/Illustration.png"
+import HerImage from "../../../../Assets/Images/Illustration.png";
 
 function Hero() {
   return (
