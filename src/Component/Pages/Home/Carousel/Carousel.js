@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import "./Carousel.css";
 
 function Carousel() {
   return (
-    <div>Carousel</div>
+    <div className='carousel_section container'>
+        <div className='carousel_container'></div>
+    </div>
   )
 }
 
