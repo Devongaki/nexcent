@@ -17,7 +17,7 @@
 
   /* Primary colors */
 
-  --Primary-color: #28cb8b;
+  --Primary-color: #4CAF4F;
   --Secondary-color: #263238;
   --Info-color: #2194f3;
 
@@ -91,4 +91,9 @@ h4 {
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
+}
+
+.button{
+  padding: 9px 22px;
+  background-color: var(--Primary-color);
 }

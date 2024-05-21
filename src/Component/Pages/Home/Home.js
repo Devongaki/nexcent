@@ -3,6 +3,8 @@ import "./Home.css"
 import Hero from '../../Pages/Home/HeroSection/Hero';
 import Client from '../../Pages/Home/ClientSection/Client';
 import Community from '../../Pages/Home/Community/Community';
+import UnlockSection from './UnlockSection/UnlockSection';
+import Achievements from './Achievements/Achievements';
 
 function Home() {
   return (
@@ -10,6 +12,8 @@ function Home() {
       < Hero />
       < Client />
       < Community />
+      < UnlockSection />
+      < Achievements />
     </main>
   )
 }

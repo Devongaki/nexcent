@@ -1,0 +1,9 @@
+.achievements_section{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--Silver);
+}
+.achievements_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
