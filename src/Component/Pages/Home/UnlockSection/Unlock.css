@@ -31,3 +31,18 @@
 .unlock_button a {
   color: var(--White);
 }
+
+
+@media screen and (max-width: 945px) {
+    .unlock_container {
+      grid-template-columns: 1fr;
+    }
+
+    .unlock_text{
+      width: 100%;
+    }
+
+    .unlock_info{
+      width: 100%;
+    }
+}
