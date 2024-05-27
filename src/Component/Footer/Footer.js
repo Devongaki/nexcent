@@ -32,12 +32,14 @@ function Footer() {
           </div>
         </div>
         <div className="footer_right">
-          <div className="footer_company">
-            <NavLink className="footer_title" to="/">
-              Company
-            </NavLink>
+          <div className="footer_text-links">
             <ul>
               <li className="nav_link">
+                <h4 className="footer_title">
+                  Company
+                </h4>
+              </li>
+              <li className="footer_link nav_link">
                 <NavLink to="/">About us</NavLink>
               </li>
               <li className="nav_link">
@@ -54,11 +56,13 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="footer_company">
-            <NavLink className="footer_title" to="/">
-              Support
-            </NavLink>
+          <div className="footer_text-links">
             <ul>
+              <li className="nav_link">
+                <h4 className="footer_title" to="/">
+                  Support
+                </h4>
+              </li>
               <li className="nav_link">
                 <NavLink to="/">Help center</NavLink>
               </li>

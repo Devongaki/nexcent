@@ -16,3 +16,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+.footer_title{
+    
+}
+.footer_text-links{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-items: start;
+}
+.footer_link{
+    color: var(--White);
+}
