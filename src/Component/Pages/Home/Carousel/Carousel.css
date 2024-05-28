@@ -1,0 +1,86 @@
+.carousel_section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.carousel_container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+}
+
+.carousel_wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel_items {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: calc(100% * 2); 
+}
+
+.carousel_item {
+  padding: 10px;
+  text-align: start;
+}
+
+.carousel_image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.carousel_text {
+  margin-top: 15px;
+}
+
+.carousel_text-title h5 {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.carousel_text-description p {
+  font-size: 16px;
+  color: #666;
+}
+
+.carousel_text-button button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: white;
+  background-color: var(--Primary-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.wiper-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.wiper-button__left {
+  left: 10px;
+}
+
+.wiper-button__right {
+  right: 10px;
+}
