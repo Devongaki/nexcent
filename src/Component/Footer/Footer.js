@@ -48,16 +48,16 @@ function Footer() {
               <li className="footer_link nav_link">
                 <NavLink to="/">About us</NavLink>
               </li>
-              <li className="nav_link">
+              <li className="footer_link nav_link">
                 <NavLink to="/blog">Blog</NavLink>
               </li>
-              <li className="nav_link">
+              <li className="footer_link nav_link">
                 <NavLink to="/register">Contact us</NavLink>
               </li>
-              <li className="nav_link">
+              <li className="footer_link nav_link">
                 <NavLink to="/pricing">Pricing</NavLink>
               </li>
-              <li className="nav_link">
+              <li className="footer_link nav_link">
                 <NavLink to="/community">Community</NavLink>
               </li>
             </ul>
@@ -69,28 +69,32 @@ function Footer() {
                   Support
                 </h4>
               </li>
-              <li className="nav_link">
+              <li className="footer_link nav_link">
                 <NavLink to="/">Help center</NavLink>
               </li>
-              <li className="nav_link">
+              <li className="footer_link nav_link">
                 <NavLink to="/">Terms and services</NavLink>
               </li>
-              <li className="nav_link">
+              <li className="footer_link nav_link">
                 <NavLink to="/">Legal</NavLink>
               </li>
-              <li className="nav_link">
+              <li className="footer_link nav_link">
                 <NavLink to="/">Privacy policy</NavLink>
               </li>
-              <li className="nav_link">
+              <li className="footer_link nav_link">
                 <NavLink to="/">Status</NavLink>
               </li>
             </ul>
           </div>
           <div className="footer_input">
-            <h4 className="footer_title">Stay up to date</h4>
-            <form>
-              <input placeholder="Your emeil address" />
-            </form>
+            <ul>
+              <li className="footer_link nav_link">
+                <h4 className="footer_title">Stay up to date</h4>
+                <form>
+                  <input placeholder="Your emeil address" />
+                </form>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

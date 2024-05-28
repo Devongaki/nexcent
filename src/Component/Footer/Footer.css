@@ -13,7 +13,7 @@
 }
 
 .footer_logo{
-    padding-bottom: 1.5em;
+    padding-bottom: 1em;
 }
 
 .footer_copyright{
@@ -44,9 +44,11 @@
 .footer_right{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 0;
 }
 .footer_title{
     color: var(--White);
+
 }
 .footer_text-links{
     display: flex;
@@ -54,6 +56,6 @@
     align-items: start;
     justify-items: start;
 }
-.footer_link{
+.footer_link a{
     color: var(--White);
 }
