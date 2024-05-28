@@ -12,12 +12,41 @@
   justify-content: center;
 }
 
+.footer_logo{
+    padding-bottom: 1.5em;
+}
+
+.footer_copyright{
+    font-size: 14px;
+    color: var(--Silver);
+    padding-bottom: 1.5em;
+}
+
+.footer_icons{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.footer_icon{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Gray);
+}
+
+.footer_icon svg{
+    color: var(--White);
+}
 .footer_right{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 .footer_title{
-    
+    color: var(--White);
 }
 .footer_text-links{
     display: flex;

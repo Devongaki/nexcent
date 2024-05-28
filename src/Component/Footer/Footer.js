@@ -25,19 +25,25 @@ function Footer() {
             </p>
           </div>
           <div className="footer_icons">
-            <IoLogoInstagram />
-            <IoLogoTwitter />
-            <IoLogoYoutube />
-            <IoLogoFacebook />
+            <div className="footer_icon">
+              <IoLogoInstagram />
+            </div>
+            <div className="footer_icon">
+              <IoLogoTwitter />
+            </div>
+            <div className="footer_icon">
+              <IoLogoYoutube />
+            </div>
+            <div className="footer_icon">
+              <IoLogoFacebook />
+            </div>
           </div>
         </div>
         <div className="footer_right">
           <div className="footer_text-links">
             <ul>
               <li className="nav_link">
-                <h4 className="footer_title">
-                  Company
-                </h4>
+                <h4 className="footer_title">Company</h4>
               </li>
               <li className="footer_link nav_link">
                 <NavLink to="/">About us</NavLink>
