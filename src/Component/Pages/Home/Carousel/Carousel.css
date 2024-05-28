@@ -33,6 +33,9 @@
   text-align: start;
 }
 
+.carousel_image {
+    width: 80%;
+}
 .carousel_image img {
   width: 100%;
   height: auto;
@@ -40,6 +43,7 @@
 }
 
 .carousel_text {
+    width: 80%;
   margin-top: 15px;
 }
 
