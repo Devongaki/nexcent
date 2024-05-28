@@ -7,6 +7,7 @@ import {
   IoLogoYoutube,
   IoLogoFacebook,
 } from "react-icons/io5";
+import { FiSend } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
 
 function Footer() {
@@ -90,8 +91,11 @@ function Footer() {
             <ul>
               <li className="footer_link nav_link">
                 <h4 className="footer_title">Stay up to date</h4>
-                <form>
-                  <input placeholder="Your emeil address" />
+                <form className="footer_form">
+                  <div className="input_container">
+                    <input placeholder="Your email address" />
+                    <FiSend className="input_icon" />
+                  </div>
                 </form>
               </li>
             </ul>
