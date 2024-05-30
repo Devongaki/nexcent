@@ -8,38 +8,38 @@ import { carouselItems } from "./CarouselItems";
 
 function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [itemsToShow, setItemsToShow] = useState(3);
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth <= 600) {
-        setItemsToShow(1);
-      } else if (window.innerWidth <= 900) {
-        setItemsToShow(2);
-      } else {
-        setItemsToShow(3);
-      }
-    };
 
-    window.addEventListener("resize", handleResize);
-    handleResize();
+  // // useEffect(() => {
+  // //   const handleResize = () => {
+  // //     if (window.innerWidth <= 600) {
+  // //       setItemsToShow(1);
+  // //     } else if (window.innerWidth <= 900) {
+  // //       setItemsToShow(2);
+  // //     } else {
+  // //       setItemsToShow(3);
+  // //     }
+  // //   };
 
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  //   window.addEventListener("resize", handleResize);
+  //   handleResize();
+
+  //   return () => window.removeEventListener("resize", handleResize);
+  // }, []);
 
   const handlePrevClick = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0
-        ? Math.ceil(carouselItems.length / itemsToShow) - 1
+        ? Math.ceil(carouselItems.length ) - 1
         : prevIndex - 1
     );
   };
 
   const handleNextClick = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === Math.ceil(carouselItems.length / itemsToShow) - 1
+      prevIndex === Math.ceil(carouselItems.length) - 1
         ? 0
-        : prevIndex + 3
+        : prevIndex + 1
     );
   };
 
