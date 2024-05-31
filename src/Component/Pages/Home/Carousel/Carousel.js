@@ -10,23 +10,6 @@ function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
 
-  // // useEffect(() => {
-  // //   const handleResize = () => {
-  // //     if (window.innerWidth <= 600) {
-  // //       setItemsToShow(1);
-  // //     } else if (window.innerWidth <= 900) {
-  // //       setItemsToShow(2);
-  // //     } else {
-  // //       setItemsToShow(3);
-  // //     }
-  // //   };
-
-  //   window.addEventListener("resize", handleResize);
-  //   handleResize();
-
-  //   return () => window.removeEventListener("resize", handleResize);
-  // }, []);
-
   const handlePrevClick = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0
