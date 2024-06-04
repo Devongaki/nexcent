@@ -1,14 +1,28 @@
 .carousel_section {
   position: relative;
   width: 100%;
+}
+.carousel_content {
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
-  box-sizing: border-box;
 }
 
+.carousel_title{
+  text-align: center;
+  width: auto;
+}
+
+.carousel_title p{
+ font-size: 14px;
+ color: var(--L-Gray);
+ width: 50%;
+ margin: 0 auto;
+ padding-top: 20px;
+ padding-bottom: 20px;
+}
 .carousel_container {
   position: relative;
   width: 100%;
@@ -25,12 +39,14 @@
 .carousel_items {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: calc(100% * ${carouselItems.length / 3}); /* Adjust width based on number of items */
+  width: calc(
+    100% * ${carouselItems.length / 3}
+  ); /* Adjust width based on number of items */
 }
 
 .carousel_item {
   flex: 0 0 33.33%;
-  padding: 0 10px; 
+  padding: 0 10px;
 }
 
 .carousel_image {
