@@ -8,21 +8,40 @@ import { carouselItems } from "./CarouselItems";
 
 function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [itemsPerPage, setItemsPerPage] = useState(6);
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 600) {
+        setItemsPerPage(3);
+      } else if (window.innerWidth <= 900) {
+        setItemsPerPage(3);
+      } else {
+        setItemsPerPage(1);
+      }
+    };
+
+    handleResize(); 
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const handlePrevClick = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0
-        ? Math.ceil(carouselItems.length ) - 1
-        : prevIndex - 1
+        ? Math.max(0, carouselItems.length - itemsPerPage)
+        : Math.max(0, prevIndex - itemsPerPage)
     );
   };
 
   const handleNextClick = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === Math.ceil(carouselItems.length) - 1
+      prevIndex + itemsPerPage >= carouselItems.length
         ? 0
-        : prevIndex + 1
+        : prevIndex + itemsPerPage
     );
   };
 
@@ -38,7 +57,10 @@ function Carousel() {
         <div className="carousel_wrapper">
           <div
             className="carousel_items"
-            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+            style={{
+              transform: `translateX(-${currentIndex * (100 / 3)}%)`,
+              width: `calc(100% * ${carouselItems.length / 3});`,
+            }}
           >
             {carouselItems.map((item) => (
               <div key={item.id} className="carousel_item">

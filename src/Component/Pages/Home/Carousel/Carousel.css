@@ -25,17 +25,18 @@
 .carousel_items {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: calc(100% * 2);
+  width: calc(100% * ${carouselItems.length / 3}); /* Adjust width based on number of items */
 }
 
 .carousel_item {
-  padding: 10px;
-  width: 100%;
+  flex: 0 0 33.33%;
+  padding: 0 10px; 
 }
 
 .carousel_image {
   width: 100%;
 }
+
 .carousel_image img {
   width: 100%;
   height: auto;
@@ -79,18 +80,27 @@
   z-index: 1000;
 }
 
-@media (max-width: 900px) {
+.wiper-button__left {
+  left: 10px;
+}
+
+.wiper-button__right {
+  right: 10px;
+}
+
+@media (max-width: 850px) {
   .carousel_item {
     flex: 0 0 50%;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 690px) {
   .carousel_item {
     flex: 0 0 100%;
   }
-  .carousel_image, 
-  .carousel_text{
+
+  .carousel_image,
+  .carousel_text {
     width: 70%;
   }
 
