@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Carousel.css";
 import {
   MdOutlineArrowBackIos,
@@ -8,26 +8,7 @@ import { carouselItems } from "./CarouselItems";
 
 function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [itemsPerPage, setItemsPerPage] = useState(6);
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth <= 600) {
-        setItemsPerPage(3);
-      } else if (window.innerWidth <= 900) {
-        setItemsPerPage(3);
-      } else {
-        setItemsPerPage(1);
-      }
-    };
-
-    handleResize(); 
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  const itemsPerPage = 3;
 
   const handlePrevClick = () => {
     setCurrentIndex((prevIndex) =>
