@@ -39,9 +39,6 @@
 .carousel_items {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: calc(
-    100% * ${carouselItems.length / 3}
-  ); /* Adjust width based on number of items */
 }
 
 .carousel_item {

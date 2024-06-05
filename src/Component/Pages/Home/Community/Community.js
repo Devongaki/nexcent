@@ -17,7 +17,7 @@ function Community() {
         <div className="community_cards">
           <div className="community_card">
             <div>
-              <img src={communityIcon1} />
+              <img src={communityIcon1} alt="communityIcon1" />
             </div>
             <div className="community_card-text">
               <h3 className="community_card-heading">
@@ -31,7 +31,7 @@ function Community() {
           </div>
           <div className="community_card">
             <div>
-              <img src={communityIcon2} />
+              <img src={communityIcon2} alt="communityIcon2" />
             </div>
             <div className="community_card-text">
               <h3 className="community_card-heading">National Associations</h3>
@@ -43,7 +43,7 @@ function Community() {
           </div>
           <div className="community_card">
             <div>
-              <img src={communityIcon3} />
+              <img src={communityIcon3} alt="communityIcon3" />
             </div>
             <div className="community_card-text">
               <h3 className="community_card-heading">Clubs And Groups</h3>
