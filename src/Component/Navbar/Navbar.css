@@ -17,7 +17,6 @@
   margin: 0 auto;
 }
 
-
 .nav_list {
   display: flex;
   align-items: center;
@@ -115,11 +114,5 @@
     color: var(--White);
     padding: 1rem 2rem;
     margin-top: 1rem;
-  }
-
-  .nav_link:hover,
-  .nav_item:hover .nav_link {
-    background-color: var(--Primary-color);
-    color: var(--White);
   }
 }
