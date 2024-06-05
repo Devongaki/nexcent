@@ -24,7 +24,7 @@ function Hero() {
             <NavLink to="/">Register</NavLink>
           </div>
         </div>
-        <div hero_image>
+        <div className="hero_image">
           <img src={HerImage} alt="Hero image" />
         </div>
       </div>

@@ -1,7 +1,7 @@
 .unlock_container {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1.5fr 2fr;
   align-items: center;
   justify-content: center;
   padding-left: 50px;
@@ -9,7 +9,7 @@
 }
 
 .unlock_text {
-  width: 60%;
+  width: 100%;
 }
 
 .unlock_heading {
@@ -21,28 +21,35 @@
 .unlock_subtext {
   font-size: 14px;
   color: var(--Gray);
-  padding-bottom: 5px;
+  padding-bottom: 15px;
 }
-.unlock_button{
-    padding: 9px 22px;
-    background-color: var(--Primary-color);
-    border: none;
+.unlock_button {
+  background-color: var(--Primary-color);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 .unlock_button a {
   color: var(--White);
 }
 
-
 @media screen and (max-width: 945px) {
-    .unlock_container {
-      grid-template-columns: 1fr;
-    }
+  .unlock_container {
+    grid-template-columns: 1fr;
+    padding-left: 0;
+    padding-right: 0;
+  }
 
-    .unlock_text{
-      width: 100%;
-    }
+  .unlock_image {
+    margin: 0 auto;
+  }
+  .unlock_text {
+    width: 100%;
+  }
 
-    .unlock_info{
-      width: 100%;
-    }
+  .unlock_info {
+    width: 100%;
+  }
 }
