@@ -12,8 +12,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem;
-  max-width: 1200px;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
   margin: 0 auto;
 }
 
@@ -63,7 +63,7 @@
 }
 
 /* Media query for small screens */
-@media screen and (max-width: 945px) {
+@media screen and (max-width: 1050px) {
   .nav_list {
     display: none;
   }
