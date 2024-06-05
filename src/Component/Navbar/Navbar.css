@@ -5,38 +5,61 @@
   left: 0;
   background-color: var(--White);
   z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
-  height: 3.5rem;
-  margin: 1rem;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
 
 .nav_list {
   display: flex;
+  align-items: center;
 }
 
 .nav_link {
   color: var(--D_Gray);
-  font-size: 12px;
-  line-height: 16px;
-  margin: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav_link:hover,
+.nav_link.active {
+  color: var(--Primary-color);
 }
 
 .nav_cta {
   background-color: var(--Primary-color);
   color: var(--White);
-  padding: 16px 32px;
-  margin: 5px;
-  cursor: pointer;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.nav_cta:hover {
+  background-color: darken(var(--Primary-color), 10%);
 }
 
 .nav_toggle {
   display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.nav_toggle:focus {
+  outline: none;
 }
 
 /* Media query for small screens */
@@ -47,40 +70,56 @@
 
   .nav_toggle {
     display: block;
-    cursor: pointer;
-    position: absolute;
-    right: 10px;
   }
 
   .nav_menu {
     display: none;
-    background-color: hsla(0, 0%, 6%, 0.2);
-    transition: ease-in 0.4s;
+    background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
-    top: 3em;
-    right: -22px;
-    max-height: 100vh;
+    top: 3.5rem;
+    right: 0;
+    width: 100%;
+    max-height: calc(100vh - 3.5rem);
+    overflow-y: auto;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+    visibility: hidden;
+    opacity: 0;
   }
 
   .nav_menu.open {
     display: block;
+    visibility: visible;
+    opacity: 1;
   }
 
   .nav_list {
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    margin-left: auto;
+    align-items: flex-start;
+    padding: 1rem;
   }
 
   .nav_item {
-    margin-bottom: 1rem;
-    margin-right: 0;
-    padding: 15px;
+    width: 100%;
+    margin: 0.5rem 0;
   }
 
+  .nav_link {
+    width: 100%;
+    padding: 1rem;
+    color: var(--White);
+  }
 
-  .nav_item:hover:not(:last-child){
+  .nav_cta {
     background-color: var(--Primary-color);
+    color: var(--White);
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+  }
+
+  .nav_link:hover,
+  .nav_item:hover .nav_link {
+    background-color: var(--Primary-color);
+    color: var(--White);
   }
 }

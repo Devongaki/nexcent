@@ -10,6 +10,7 @@ function Navbar() {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+
   return (
     <header className="header">
       <nav className="nav container">
@@ -17,39 +18,51 @@ function Navbar() {
           <img src={LogoImage} alt="Logo" />
         </NavLink>
 
-        <div className="nav_toggle" onClick={toggleMenu}>
+        <button
+          className="nav_toggle"
+          onClick={toggleMenu}
+          aria-label="Toggle menu"
+        >
           {menuOpen ? <IoClose /> : <IoMenu />}
-        </div>
+        </button>
 
         <div className={`nav_menu ${menuOpen ? "open" : ""}`}>
           <ul className="nav_list">
             <li className="nav_item">
-              <NavLink to="/" className="nav_link">
+              <NavLink to="/" className="nav_link" onClick={toggleMenu}>
                 Home
               </NavLink>
             </li>
             <li className="nav_item">
-              <NavLink to="/features" className="nav_link">
+              <NavLink to="/features" className="nav_link" onClick={toggleMenu}>
                 Features
               </NavLink>
             </li>
             <li className="nav_item">
-              <NavLink to="/community" className="nav_link">
+              <NavLink
+                to="/community"
+                className="nav_link"
+                onClick={toggleMenu}
+              >
                 Community
               </NavLink>
             </li>
             <li className="nav_item">
-              <NavLink to="/blog" className="nav_link">
+              <NavLink to="/blog" className="nav_link" onClick={toggleMenu}>
                 Blog
               </NavLink>
             </li>
             <li className="nav_item">
-              <NavLink to="/pricing" className="nav_link">
+              <NavLink to="/pricing" className="nav_link" onClick={toggleMenu}>
                 Pricing
               </NavLink>
             </li>
             <li className="nav_item">
-              <NavLink to="/register" className="nav_link nav_cta">
+              <NavLink
+                to="/register"
+                className="nav_link nav_cta"
+                onClick={toggleMenu}
+              >
                 Register Now
               </NavLink>
             </li>
