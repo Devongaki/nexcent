@@ -108,6 +108,10 @@
 }
 
 @media (max-width: 690px) {
+
+  .carousel_title p{
+    width: 100%;
+  }
   .carousel_item {
     flex: 0 0 100%;
   }

@@ -33,7 +33,7 @@
 }
 
 .community_card {
-  width: 250px;
+  width: auto;
   height: 250px;
   display: flex;
   flex-direction: column;
@@ -51,13 +51,14 @@
 }
 
 .community_card-heading {
-  font-size: 19px;
+  font-size: 16px;
   line-height: 25px;
 }
 
 .community_card-subheading {
   font-size: 12px;
   line-height: 13px;
+  color: var(--Gray);
 }
 
 @media screen and (max-width: 945px) {
