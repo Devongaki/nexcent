@@ -12,8 +12,9 @@
 
 .archievment_heading h3{
     font-size: 24px;
-    line-height: 23px;
+    line-height: 28px;
     font-weight: bold;
+    padding-bottom: 12px;
 }
 
 .archievment_heading p{
@@ -25,11 +26,12 @@
 }
 .achievement_icons-items {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-  justify-items: start;
+  grid-template-columns: 2fr 2fr;
+  gap: 2em;
   align-items: start; 
   padding: 20px;
+  justify-items: start;
+  margin: 0 auto;
 }
 
 .achievement_icons-item {
@@ -43,6 +45,13 @@
     color: var(--Primary-color);
     width: 35px;
     height: 35px;
+}
+.achievment_icon-info{
+    padding: .5em;
+}
+
+.achievment_icon-info > p {
+    padding-bottom: .3em;
 }
 .achievment_icon-number{
     font-size: 16px;
@@ -65,11 +74,9 @@
     }
 
     .achievement_icons-items{
-        display: flex;
-        justify-content: center;
+        display: grid;
         align-items: center;
-        flex-wrap: wrap;
-
+        justify-content: center;
     }
 
 
