@@ -16,12 +16,12 @@ function Footer() {
       <div className="footer_container">
         <div className="footer_left">
           <div className="footer_logo">
-            <img src={footerLogo}  alt="footer Logo"/>
+            <img src={footerLogo} alt="footer Logo" />
           </div>
           <div className="footer_copyright">
             <p>
               Copyright © 2020 Landify UI Kit.
-              <br></br>
+              <br />
               All rights reserved
             </p>
           </div>
@@ -66,9 +66,7 @@ function Footer() {
           <div className="footer_text-links">
             <ul>
               <li className="nav_link">
-                <h4 className="footer_title" to="/">
-                  Support
-                </h4>
+                <h4 className="footer_title">Support</h4>
               </li>
               <li className="footer_link nav_link">
                 <NavLink to="/">Help center</NavLink>
